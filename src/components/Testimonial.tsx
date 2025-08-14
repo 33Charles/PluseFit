@@ -6,31 +6,31 @@ const testimonials = [
   {
     name: "Alice Johnson",
     role: "Fitness Enthusiast",
-    text: "This program completely changed my life! The step-by-step guidance, the personalized workout plans, and the supportive community helped me reach my fitness goals faster than I ever imagined. Highly recommend to anyone looking to transform their lifestyle.",
+    text: "This program completely changed my life! The step-by-step guidance, the personalized workout plans, and the supportive community helped me reach my fitness goals faster than I ever imagined. The weekly check-ins and motivational support kept me accountable, and I finally developed sustainable habits that I can maintain for years to come.",
     image: "https://i.pravatar.cc/150?img=1",
   },
   {
     name: "Bob Smith",
     role: "Gym Trainer",
-    text: "Excellent guidance and support throughout the entire process. I was able to see noticeable progress in just a few weeks, and the program's structure makes it easy to stay consistent. Perfect for both beginners and seasoned athletes.",
+    text: "Excellent guidance and support throughout the entire process. I was able to see noticeable progress in just a few weeks, and the program's structure makes it easy to stay consistent. The resources provided, from nutrition tips to recovery strategies, were incredibly valuable. Perfect for both beginners and seasoned athletes who want a comprehensive approach to fitness and wellness.",
     image: "https://i.pravatar.cc/150?img=2",
   },
   {
     name: "Catherine Lee",
     role: "Athlete",
-    text: "The personalized plans are amazing! They helped me improve my performance dramatically while avoiding injuries. The workouts are challenging but fun, and the nutrition tips complement the training perfectly. I feel stronger and more confident than ever.",
+    text: "The personalized plans are amazing! They helped me improve my performance dramatically while avoiding injuries. The workouts are challenging but fun, and the nutrition tips complement the training perfectly. The program also emphasizes mental wellbeing, and I feel stronger, more confident, and more energized than ever before. I truly enjoy every session and feel supported every step of the way.",
     image: "https://i.pravatar.cc/150?img=3",
   },
   {
     name: "Daniel Kim",
     role: "Yoga Instructor",
-    text: "Flexible, effective, and easy to follow. I love how the program adapts to my schedule and still keeps me accountable. The variety of exercises and mindful guidance makes it a holistic approach to health and fitness that I truly enjoy.",
+    text: "Flexible, effective, and easy to follow. I love how the program adapts to my schedule and still keeps me accountable. The variety of exercises, mindfulness techniques, and holistic guidance makes it a complete approach to health and fitness. I feel more balanced, focused, and capable of handling daily challenges. This program has truly elevated both my physical and mental wellbeing.",
     image: "https://i.pravatar.cc/150?img=4",
   },
   {
     name: "Emma Watson",
     role: "Student",
-    text: "Great community and consistent support throughout my journey. It kept me motivated even on days I felt lazy or stressed. The balance between flexibility and structure allowed me to maintain my studies while achieving my fitness goals. Absolutely love it!",
+    text: "Great community and consistent support throughout my journey. It kept me motivated even on days I felt lazy or stressed. The balance between flexibility and structure allowed me to maintain my studies while achieving my fitness goals. The encouragement from coaches and fellow members has been invaluable, and I now feel empowered, healthier, and more confident in my abilities. Absolutely love being part of this program!",
     image: "https://i.pravatar.cc/150?img=5",
   },
 ];
@@ -99,7 +99,7 @@ export default function Testimonial() {
                     </p>
                   </div>
                 </div>
-                <p className=" text-gray-700 dark:text-gray-300 overflow-ellipsis">
+                <p className="flex text-gray-700 dark:text-gray-300 overflow-ellipsis text-sm">
                   {testimonial.text}
                 </p>
               </div>

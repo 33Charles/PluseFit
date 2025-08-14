@@ -137,7 +137,7 @@ function BodySection() {
             </div>
           ))}
         </div>
-        <div className="border-b-2 border-black/30 dark:border-white/30 w-full my-20" />
+        <div className="border-b-2 border-black/15 dark:border-white/10 w-full my-20" />
 
         <div>
           <div className="max-w-screen-lg">

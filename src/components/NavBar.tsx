@@ -18,7 +18,7 @@ function NavBar() {
       <div className="hidden md:flex gap-[clamp(0.75rem,2vw,1.5rem)] text-[clamp(0.875rem,1.5vw,1.125rem)] font-medium text-black dark:text-white transition-colors duration-1000">
         <a href="#">Home</a>
         <a href="#">About Us</a>
-        <a href="#">Classes</a>
+        <a href="#">Programs</a>
         <a href="#">Membership</a>
         <a href="#">Contact Us</a>
       </div>
