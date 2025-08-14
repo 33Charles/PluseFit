@@ -24,7 +24,7 @@ export default function ScrollToTop() {
         hover:from-pink-500 hover:to-rose-600
         dark:from-yellow-400 dark:to-orange-600 
         dark:hover:from-yellow-500 dark:hover:to-orange-700
-        transition-transform transform duration-500 hover:scale-110
+        transition-transform transform duration-500 hover:scale-110 cursor-pointer
 
         ${isVisible ? "opacity-70" : "opacity-0 pointer-events-none"}`}
       aria-label="Scroll to top"
