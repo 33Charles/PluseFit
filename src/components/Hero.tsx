@@ -4,14 +4,11 @@ import { FiArrowUpRight } from "react-icons/fi";
 function Hero() {
   return (
     <div className="flex flex-col min-h-screen bg-[url(/hero.jpg)] bg-center bg-no-repeat bg-cover">
-      {/* Navbar */}
       <div className="relative z-50">
         <NavBar />
       </div>
 
-      {/* Hero Section */}
       <section className="flex-1 bg-white/30 dark:bg-black/70 backdrop-blur-sm flex flex-col lg:flex-row items-center justify-center gap-8 px-4 transition-colors duration-1000">
-        {/* Text Column */}
         <div className="w-full lg:w-1/2 text-black dark:text-white transition-colors duration-1000">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif mb-6 uppercase leading-tight">
             Your fitness journey starts with us.
@@ -28,8 +25,6 @@ function Hero() {
           </button>
         </div>
 
-        {/* Image Column */}
-        {/* Image Column */}
         <div className="flex flex-wrap lg:flex-nowrap gap-4 justify-center items-center">
           <div className="w-1/3 max-w-[190px]">
             <img

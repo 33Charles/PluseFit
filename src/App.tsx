@@ -1,10 +1,12 @@
 import Hero from "./components/Hero";
+import BodySection from "./components/BodySection";
 import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen transition-colors duration-700">
+    <div>
       <Hero />
+      <BodySection />
     </div>
   );
 }
