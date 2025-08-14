@@ -137,7 +137,7 @@ function BodySection() {
             </div>
           ))}
         </div>
-        <div className="border-b-2 border-black/30 w-full my-20" />
+        <div className="border-b-2 border-black/30 dark:border-white/30 w-full my-20" />
 
         <div>
           <div className="max-w-screen-lg">
@@ -152,66 +152,190 @@ function BodySection() {
               lifestyle.
             </p>
           </div>
-          <div className="flex gap-6">
-            <div>
+
+          <div className="flex flex-wrap gap-6 justify-center mt-8">
+            <div
+              className="min-w-[fit-content] max-w-md px-4 sm:px-8 py-6 sm:py-10 rounded-xl flex-1 flex flex-col animate-pulse transform transition duration-300 hover:scale-105 hover:animate-none"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(160, 160, 160, 0.327), rgba(189, 107, 210, 0.3))",
+              }}
+            >
               <h3 className="text-xl capitalize text-black dark:text-white">
                 beginner plan
               </h3>
-              <p className="text-gray-900 dark:text-gray-300 capitalize text-sm mb-4">
+              <p className="text-gray-900 dark:text-gray-300 capitalize text-sm mb-8">
                 billed monthly
               </p>
               <h5 className="text-xl capitalize text-black dark:text-white font-semibold">
                 $100
-                <span className="text-gray-900 dark:text-gray-300 capitalize text-sm mb-4 font-normal">
+                <span className="text-gray-900 dark:text-gray-300 capitalize text-sm font-normal">
                   /month
                 </span>
               </h5>
-              <div className="capitalize text-gray-900 dark:text-gray-300 flex flex-col gap-2 my-6">
-                <p className="flex align-center gap-3">
-                  {" "}
+              <div className="capitalize text-gray-900 dark:text-gray-300 flex flex-col gap-3 my-8">
+                <p className="flex items-center gap-3">
                   <IoIosCheckmarkCircleOutline
                     size={25}
                     className="text-green-600"
                   />{" "}
                   Group Classes (1 per week)
                 </p>
-                <p className="flex align-center gap-3">
-                  {" "}
+                <p className="flex items-center gap-3">
                   <IoIosCheckmarkCircleOutline
                     size={25}
                     className="text-green-600"
                   />{" "}
-                  nutrition coaching (basic tips)
+                  Nutrition coaching (basic tips)
                 </p>
-                <p className="flex align-center gap-3">
-                  {" "}
+                <p className="flex items-center gap-3">
                   <IoIosCheckmarkCircleOutline
                     size={25}
                     className="text-green-600"
                   />{" "}
                   Gym access (limited - 4 days/week)
                 </p>
-                <p className="flex align-center gap-3">
-                  {" "}
-                  <MdOutlineCancel
-                    size={25}
-                    className="text-red-600"
-                  />{" "}
-                  personal training sessions
+                <p className="flex items-center gap-3">
+                  <MdOutlineCancel size={25} className="text-red-600" />{" "}
+                  Personal training sessions
                 </p>
-                <p className="flex align-center gap-3">
-                  {" "}
-                  <MdOutlineCancel
+                <p className="flex items-center gap-3">
+                  <MdOutlineCancel size={25} className="text-red-600" />{" "}
+                  Recovery zone access
+                </p>
+              </div>
+              <button
+                className="capitalize rounded-full w-full py-2 text-gray-900 dark:text-gray-300 font-semibold transform transition duration-300 hover:scale-105 cursor-pointer"
+                style={{ backgroundColor: "rgba(186, 85, 211, 0.3)" }}
+              >
+                am getting started
+              </button>
+            </div>
+
+            <div
+              className="min-w-[fit-content] max-w-md px-4 sm:px-8 py-6 sm:py-10 rounded-xl flex-1 flex flex-col animate-pulse transform transition duration-300 hover:scale-105 hover:animate-none"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(160, 160, 160, 0.327), rgba(245, 206, 64, 0.327))",
+              }}
+            >
+              <h3 className="text-xl capitalize text-black dark:text-white">
+                pro plan
+              </h3>
+              <p className="text-gray-900 dark:text-gray-300 capitalize text-sm mb-8">
+                billed monthly
+              </p>
+              <h5 className="text-xl capitalize text-black dark:text-white font-semibold">
+                $300
+                <span className="text-gray-900 dark:text-gray-300 capitalize text-sm font-normal">
+                  /month
+                </span>
+              </h5>
+              <div className="capitalize text-gray-900 dark:text-gray-300 flex flex-col gap-3 my-8">
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
                     size={25}
-                    className="text-red-600"
+                    className="text-green-600"
+                  />{" "}
+                  Group Classes (1 per week)
+                </p>
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
+                  />{" "}
+                  Nutrition coaching (basic tips)
+                </p>
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
+                  />{" "}
+                  Gym access (unlimited)
+                </p>
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
+                  />{" "}
+                  Personal training sessions
+                </p>
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
                   />{" "}
                   Recovery zone access
                 </p>
               </div>
-              <button className="capitalize rounded-full w-full bg-black/15 py-2"> am getting started</button>
+              <button
+                className="capitalize rounded-full w-full py-2 text-gray-900 dark:text-gray-300 font-semibold transform transition duration-300 hover:scale-105 cursor-pointer"
+                style={{ backgroundColor: "rgba(245, 206, 64, 0.527)" }}
+              >
+                let's train like a pro
+              </button>
             </div>
-            <div>pro plan</div>
-            <div>intermediate plan</div>
+
+            <div
+              className="min-w-[fit-content] max-w-md px-4 sm:px-8 py-6 sm:py-10 rounded-xl flex-1 flex flex-col animate-pulse transform transition duration-300 hover:scale-105 hover:animate-none"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(160, 160, 160, 0.327), rgba(189, 107, 210, 0.3))",
+              }}
+            >
+              <h3 className="text-xl capitalize text-black dark:text-white">
+                intermediate plan
+              </h3>
+              <p className="text-gray-900 dark:text-gray-300 capitalize text-sm mb-8">
+                billed monthly
+              </p>
+              <h5 className="text-xl capitalize text-black dark:text-white font-semibold ">
+                $230
+                <span className="text-gray-900 dark:text-gray-300 capitalize text-sm font-normal">
+                  /month
+                </span>
+              </h5>
+              <div className="capitalize text-gray-900 dark:text-gray-300 flex flex-col gap-3 my-8">
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
+                  />{" "}
+                  Group Classes (1 per week)
+                </p>
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
+                  />{" "}
+                  Nutrition coaching (basic tips)
+                </p>
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
+                  />{" "}
+                  Gym access (unlimited)
+                </p>
+                <p className="flex items-center gap-3">
+                  <IoIosCheckmarkCircleOutline
+                    size={25}
+                    className="text-green-600"
+                  />{" "}
+                  Personal training sessions
+                </p>
+                <p className="flex items-center gap-3">
+                  <MdOutlineCancel size={25} className="text-red-600" />{" "}
+                  Recovery zone access
+                </p>
+              </div>
+              <button
+                className="capitalize rounded-full w-full text-gray-900 dark:text-gray-300 py-2 font-semibold transform transition duration-300 hover:scale-103 cursor-pointer"
+                style={{ backgroundColor: "rgba(186, 85, 211, 0.3)" }}
+              >
+                ready to go harder
+              </button>
+            </div>
           </div>
         </div>
       </div>
