@@ -1,13 +1,11 @@
-import Hero from "./components/Hero";
-import BodySection from "./components/BodySection";
+import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <div className="relative">
-      <Hero />
-      <BodySection />
+      <HomePage />
       <ScrollToTop />
     </div>
   );

@@ -8,7 +8,7 @@ import { MdOutlineCancel } from "react-icons/md";
 function BodySection() {
   return (
     <div>
-      <div className="py-20 px-10 sm:px-12 md:px-12 bg-white dark:bg-black/90">
+      <div className="py-20 px-4 sm:px-12 md:px-12 bg-white dark:bg-black/90">
         <div className="max-w-screen-lg">
           <h2 className="text-3xl sm:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white">
             Why we are not just <span className="block">another gym.</span>
@@ -80,7 +80,7 @@ function BodySection() {
         </div>
       </div>
 
-      <div className="py-20 px-10 sm:px-12 md:px-12 bg-black/10 dark:bg-black">
+      <div className="py-20 px-4 sm:px-12 md:px-12 bg-black/10 dark:bg-black">
         <div className="max-w-screen-lg">
           <h2 className="text-3xl sm:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white">
             Programs made to fit your life,
