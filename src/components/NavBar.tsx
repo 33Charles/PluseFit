@@ -89,19 +89,19 @@ function NavBar() {
 
       {isMenuOpen && (
         <div className="backdrop-blur-md  z-100 absolute top-full right-0 w-full bg-white/85 dark:bg-black/95 text-black dark:text-white flex flex-col items-center gap-4 py-4 md:hidden transition-colors duration-1000">
-          <a href="#" onClick={() => setIsMenuOpen(false)}>
+          <a href="/" onClick={() => setIsMenuOpen(false)}>
             Home
           </a>
-          <a href="#" onClick={() => setIsMenuOpen(false)}>
+          <a href="/about-us" onClick={() => setIsMenuOpen(false)}>
             About Us
           </a>
-          <a href="#" onClick={() => setIsMenuOpen(false)}>
-            Classes
-          </a>
-          <a href="#" onClick={() => setIsMenuOpen(false)}>
+          <HashLink smooth to="/#programs" onClick={() => setIsMenuOpen(false)}>
+            Programs
+          </HashLink>
+          <HashLink  smooth to="/#programs" onClick={() => setIsMenuOpen(false)}>
             Membership
-          </a>
-          <a href="#" onClick={() => setIsMenuOpen(false)}>
+          </HashLink>
+          <a href="/contact-us" onClick={() => setIsMenuOpen(false)}>
             Contact Us
           </a>
           <button className="rounded-full bg-gradient-to-r from-pink-400 to-rose-500 text-white px-6 py-2 font-semibold shadow-lg hover:from-pink-500 hover:to-rose-600 dark:from-yellow-400 dark:to-orange-600 dark:hover:from-yellow-500 dark:hover:to-orange-700 transition-transform transform hover:scale-105 duration-500 ">
