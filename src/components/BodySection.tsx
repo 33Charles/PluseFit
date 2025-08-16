@@ -80,7 +80,10 @@ function BodySection() {
         </div>
       </div>
 
-      <div className="py-20 px-4 sm:px-12 bg-black/10 dark:bg-black">
+      <div
+        id="programs"
+        className="py-20 px-4 sm:px-12 bg-black/10 dark:bg-black"
+      >
         <div className="max-w-screen-lg">
           <h2 className="text-3xl sm:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white">
             Programs made to fit your life,
@@ -140,7 +143,7 @@ function BodySection() {
         <div className="border-b-2 border-black/15 dark:border-white/10 w-full my-20" />
 
         <div>
-          <div className="max-w-screen-lg">
+          <div id="membership" className="max-w-screen-lg">
             <h2 className="text-3xl sm:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white">
               let's find a program that works,
               <span className="block">for you.</span>

@@ -1,5 +1,6 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
@@ -22,31 +23,33 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-400">
             <li>
               <a
-                href="#"
+                href="/"
                 className="hover:text-purple-600 dark:hover:text-purple-400 transition"
               >
                 Home
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <HashLink
+                smooth
+                to="/#programs"
                 className="hover:text-purple-600 dark:hover:text-purple-400 transition"
               >
                 Programs
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a
-                href="#"
+              <HashLink
+                smooth
+                to="/#membership"
                 className="hover:text-purple-600 dark:hover:text-purple-400 transition"
               >
                 Membership
-              </a>
+              </HashLink>
             </li>
             <li>
               <a
-                href="#"
+                href="/about-us"
                 className="hover:text-purple-600 dark:hover:text-purple-400 transition"
               >
                 About Us

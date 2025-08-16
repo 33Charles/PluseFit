@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTheme } from "../hooks/useTheme";
 import { MdDarkMode, MdLightMode, MdMenu, MdClose } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
 
 function NavBar() {
   const { theme, toggleTheme } = useTheme();
@@ -16,11 +17,38 @@ function NavBar() {
       </div>
 
       <div className="hidden md:flex gap-[clamp(0.75rem,2vw,1.5rem)] text-[clamp(0.875rem,1.5vw,1.125rem)] font-medium text-black dark:text-white transition-colors duration-1000">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Programs</a>
-        <a href="#">Membership</a>
-        <a href="#">Contact Us</a>
+        <a
+          href="/"
+          className="hover:text-purple-600 dark:hover:text-purple-400 transition"
+        >
+          Home
+        </a>
+        <a
+          href="/about-us"
+          className="hover:text-purple-600 dark:hover:text-purple-400 transition"
+        >
+          About Us
+        </a>
+        <HashLink
+          smooth
+          to="/#programs"
+          className="hover:text-purple-600 dark:hover:text-purple-400 transition"
+        >
+          Programs
+        </HashLink>
+        <HashLink
+          smooth
+          to="/#membership"
+          className="hover:text-purple-600 dark:hover:text-purple-400 transition"
+        >
+          Membership
+        </HashLink>
+        <a
+          href="/contact-us"
+          className="hover:text-purple-600 dark:hover:text-purple-400 transition"
+        >
+          Contact Us
+        </a>
       </div>
 
       <div className="hidden md:flex gap-[clamp(0.5rem,1.5vw,0.75rem)]">
