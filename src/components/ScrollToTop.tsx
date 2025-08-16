@@ -19,7 +19,7 @@ export default function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`animate-bounce fixed bottom-6 right-6 z-50 p-3 rounded-full text-white dark:text-black  
+      className={`animate-bounce hover:animate-none fixed bottom-6 right-6 z-50 p-3 rounded-full text-white dark:text-black  
         bg-gradient-to-r from-pink-400 to-rose-500 
         hover:from-pink-500 hover:to-rose-600
         dark:from-yellow-400 dark:to-orange-600 

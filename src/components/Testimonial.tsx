@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Bob Smith",
     role: "Gym Trainer",
-    text: "Excellent guidance and support throughout the entire process. I was able to see noticeable progress in just a few weeks, and the program's structure makes it easy to stay consistent. The resources provided, from nutrition tips to recovery strategies, were incredibly valuable. Perfect for both beginners and seasoned athletes who want a comprehensive approach to fitness and wellness.",
+    text: "Excellent guidance and support throughout the entire process. I was able to see noticeable progress in just a few weeks, and the program's structure makes it easy to stay consistent. The resources provided, from nutrition tips to recovery strategies, were incredibly valuable. Perfect for both beginners and seasoned athletes.",
     image: "https://i.pravatar.cc/150?img=2",
   },
   {
@@ -30,7 +30,7 @@ const testimonials = [
   {
     name: "Emma Watson",
     role: "Student",
-    text: "Great community and consistent support throughout my journey. It kept me motivated even on days I felt lazy or stressed. The balance between flexibility and structure allowed me to maintain my studies while achieving my fitness goals. The encouragement from coaches and fellow members has been invaluable, and I now feel empowered, healthier, and more confident in my abilities. Absolutely love being part of this program!",
+    text: "Great community and consistent support throughout my journey. It kept me motivated even on days I felt lazy or stressed. The balance between flexibility and structure allowed me to maintain my studies while achieving my fitness goals. The encouragement from coaches and fellow members has been invaluable, and I now feel empowered, healthier, and more confident in my abilities.",
     image: "https://i.pravatar.cc/150?img=5",
   },
 ];
@@ -72,16 +72,23 @@ export default function Testimonial() {
       </div>
 
       <div className="flex flex-col items-center relative w-full max-w-6xl mx-auto ">
-        <div className="flex justify-center items-center gap-6 w-full overflow-hidden relative h-[450px]">
+        <div className="flex justify-center items-center gap-6 w-full  relative h-[450px]">
           {[getIndex(-1), centerIndex, getIndex(1)].map((idx, i) => {
             const testimonial = testimonials[idx];
             const scale = i === 1 ? "scale-110" : "scale-90";
             const opacity = i === 1 ? "opacity-100" : "opacity-60";
 
+            let visibility = "";
+            if (i === 0) {
+              visibility = "hidden lg:block";
+            } else if (i === 2) {
+              visibility = "hidden md:block";
+            }
+
             return (
               <div
                 key={testimonial.name}
-                className={`flex flex-col rounded-xl p-6 shadow-lg transform ${scale} ${opacity} transition-transform duration-500 ease-in-out w-[320px] h-[350px] bg-gradient-to-b from-gray-50 to-gray-200 dark:from-white/15 dark:to-black/40`}
+                className={`flex flex-col rounded-xl p-6 shadow-lg transform ${scale} ${opacity} ${visibility} transition-transform duration-500 ease-in-out w-[320px] h-[350px] bg-gradient-to-b from-gray-50 to-gray-200 dark:from-white/15 dark:to-black/40`}
               >
                 {" "}
                 <div className="flex items-center gap-5">

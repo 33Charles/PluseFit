@@ -107,7 +107,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 border-t border-black/15 dark:border-white/10 pt-6 text-center text-sm text-gray-700 dark:text-gray-400">
-        &copy; {new Date().getFullYear()} Pulsefit Gym. All rights reserved.
+        &copy; {new Date().getFullYear()} PulseFit Gym. All rights reserved.
       </div>
     </footer>
   );
