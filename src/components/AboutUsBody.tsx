@@ -57,7 +57,7 @@ function AboutUsBody() {
 
   return (
     <div>
-      <div className="py-20 px-4 sm:px-12  bg-black/10 dark:bg-black">
+      <div className="py-20 px-4 sm:px-12  bg-black/10 dark:bg-black transition-colors duration-1000">
         <div className="flex flex-col-reverse lg:flex-row gap-10  items-center">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -67,10 +67,10 @@ function AboutUsBody() {
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white">
+            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white transition-colors duration-1000">
               the story behind our gym.
             </h4>
-            <p className="text-gray-900 dark:text-gray-300 text-sm sm:text-base lg:text-lg lg:w-[90%]">
+            <p className="text-gray-900 dark:text-gray-300 text-sm sm:text-base lg:text-lg lg:w-[90%] transition-colors duration-1000">
               Every great journey starts with a vision. Our gym was born out of
               a simple but powerful belief; that fitness is more than just
               exercise, it’s a lifestyle that builds strength, confidence, and
@@ -84,10 +84,10 @@ function AboutUsBody() {
 
         <div className="flex flex-col lg:flex-row gap-10 items-center mt-20">
           <div className="w-full lg:w-1/2">
-            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white">
+            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-semibold capitalize leading-tight mb-4 text-black dark:text-white transition-colors duration-1000">
               Want to know what you are walking into? take a look around.
             </h4>
-            <p className="text-gray-900 dark:text-gray-300 text-sm sm:text-base lg:text-lg">
+            <p className="text-gray-900 dark:text-gray-300 text-sm sm:text-base lg:text-lg transition-colors duration-1000">
               Step inside and see for yourself. Our gym is more than just
               equipment,it’s an environment built to inspire, motivate, and
               support your fitness journey. Take a look around and get a feel
@@ -151,7 +151,6 @@ function AboutUsBody() {
                 key={name}
                 className="relative text-white rounded-xl overflow-hidden shadow-lg group"
               >
-                
                 <div className="h-96 w-full relative">
                   <img
                     src={image}
